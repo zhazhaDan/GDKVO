@@ -14,3 +14,5 @@
 	- (void)removeObserver {
 		[self GD_removeObserver:self forKey:@"name"];
 	}
+- 注意这里重复添加同一个对象的同一个属性的监听是会自动过滤的，不会让用户对同一个对象的同一个属性重复监听
+- 移除监听不受影响，多次重复移除也不会有任何问题
